@@ -1,3 +1,5 @@
+package ArrayPrac;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

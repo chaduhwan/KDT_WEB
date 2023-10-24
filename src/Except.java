@@ -52,7 +52,7 @@ public class Except {
         //FileNotFoundException
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("숫자를 입력하세요");
+        System.out.println("배열의 크기를 입력하세요");
         try {
             int num = scan.nextInt();
             int[] intArray = new int[num]; // 크키가 5인 int 배열
@@ -70,9 +70,7 @@ public class Except {
         } catch (InputMismatchException e) {
             System.out.println("입력오류, 정수를 입력하세요");
             System.out.println(e);
-        } catch (ArithmeticException e) {
-            System.out.println("배열의 길이는 0이 될 수 없습니다");
-            System.out.println(e);
+
         }  catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("배열의 범위에서 벗어났습니다");
                 System.out.println(e);
