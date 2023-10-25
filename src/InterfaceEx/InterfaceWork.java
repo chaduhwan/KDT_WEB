@@ -4,6 +4,9 @@ interface Playable {
     void play();
     void pause();
     void stop();
+    default void display() {
+        System.out.println("Display On");
+    }
 
 }
 class MP3Player implements Playable {
